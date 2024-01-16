@@ -1,0 +1,340 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background:white;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg{
+    position: absolute;
+    display: flex;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;      
+  }
+  
+  .bubble{
+    position: fixed;
+    width:40px;
+    height: 40px;
+    border-radius:50%;
+    animation: rise 7s infinite ease-in;
+  }
+  
+  .bubble:nth-child(1){
+    width:40px;
+    height:40px;
+    background:rgb(165, 10, 179);
+    left:10%;
+    animation-duration:6s;
+  }
+  .bubble:nth-child(2){
+    width:30px;
+    height:30px;
+    left:20%;
+    background:rgb(228, 107, 31);
+    animation-duration:8s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(3){
+    width:50px;
+    height:50px;
+    left:35%;
+    animation-duration:7s;
+    animation-delay:2s;
+    background:rgb(179, 10, 10);
+  
+  }
+  .bubble:nth-child(4){
+    width:80px;
+    height:80px;
+    background:rgb(130, 229, 246);
+    left:50%;
+    animation-duration:11s;
+    animation-delay:0s;
+  }
+  .bubble:nth-child(5){
+    width:35px;
+    height:35px;
+    left:55%;
+    background:rgb(10, 179, 145);
+    animation-duration:6s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(6){
+    width:45px;
+    height:45px;
+    background:rgb(238, 223, 17);
+    left:65%;
+    animation-duration:8s;
+    animation-delay:3s;
+  }
+  .bubble:nth-child(7){
+    width:90px;
+    height:90px;
+    left:70%;
+    animation-duration:12s;
+    background:rgb(179, 10, 55);
+    animation-delay:2s;
+  }
+  .bubble:nth-child(8){
+    width:25px;
+    height:25px;
+    left:80%;
+    background:rgb(10, 55, 179);
+  
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  .bubble:nth-child(9){
+    width:25px;
+    background:rgb(27, 179, 10);
+    height:25px;
+    left:70%;
+    animation-duration:5s;
+    animation-delay:1s;
+  }
+  .bubble:nth-child(10){
+    width:90px;
+    height:90px;
+    left:25%;
+    animation-duration:10s;
+    background:rgb(65, 6, 71);
+    animation-delay:4s;
+  }
+  .bubble:nth-child(11){
+    width:90px;
+    height:90px;
+    left:10%;
+    animation-duration:5s;
+    background:rgb(30, 10, 179);
+  
+    animation-delay:3s;
+  }
+  .bubble:nth-child(12){
+    width:25px;
+    height:25px;
+    right:30%;
+    background:rgb(219, 222, 228);
+  
+    animation-duration:6s;
+    animation-delay:2s;
+  }
+  @keyframes rise{
+    0%{
+      bottom: -100px;
+      transform:translateX(0);
+    }
+    50%{
+      transform:translate(100px);
+    }
+    100%{
+     bottom: 1000px;
+      transform:translateX(-200px);
+    }
+  }
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:400px;
+    height:500px;
+    background:white;
+    border: 3px solid #a432ce;
+    gap:10px;
+}
+
+  .details{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+  }
+  
+  h4 a{
+    background-color: transparent;
+    color: #333df6;
+    cursor: pointer;
+  }
+  h4 a:hover{
+    background-color: #cacace94;
+    color: black;
+  }
+  
+  .or{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+  }
+  .remember{
+    display: flex;
+    justify-content: space-between;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:10px;
+    font-size: 20px;
+    cursor: pointer;
+    flex-direction: row;
+  }
+  input{
+    border:1px #a432ce;
+  }
+  .email{
+    width: 240px;
+    height: 30px;
+    /* color: white; */
+    padding:10px;
+   background-color: #a432ce;
+    border-radius: 5px;
+    border:1px #a432ce;
+  }
+  .email::placeholder{
+    color: white;
+    background: #a432ce;
+  }
+  .password{
+    width: 240px;
+    background-color: #a432ce;
+    height: 30px;
+    color: rgb(8, 8, 8);
+    padding:10px;
+    border:1px #a432ce;
+    border-radius: 5px;
+  }
+  .password::placeholder{
+    color: white;
+  }
+  #login{
+    width: 240px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+.wrapper .container2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:400px;
+    justify-content: center;
+    height:500px;
+    background:white;
+    border: 3px solid #a432ce;
+    gap:10px;
+}
+.container2 .details{
+    padding-left: 20px;
+}
+  h1{
+    font-size: 30px;
+    padding: 5px;
+    font-weight: 800;
+  }
+
+  .email::placeholder{
+    color: white;
+    background: #a432ce;
+  } 
+  h2{
+    text-align: start;
+  }
+  #Sign-Up{
+    width: 240px;
+    height: 30px;
+    background-color:black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+.link {
+    text-align: center;
+    color:black;
+}
+ .link a {
+    text-transform: capitalize;
+    color:blue;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.link a:hover {
+    color: #da4453;
+}
+
+.wrapper.signin .form-container.sign-in {
+    animation: signin-flip 1s ease-in-out forwards;
+}
+
+@keyframes signin-flip {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg) scale(1);
+    }
+}
+
+.wrapper.signin .sign-up {
+    animation: rotatecard .1s ease-in-out forwards;
+}
+
+.wrapper.signup .sign-up {
+    animation: signup-flip 1s ease-in-out forwards;
+}
+
+@keyframes signup-flip {
+    0% {
+        transform: translateX(0);
+        z-index: 1;
+    }
+    100% {
+        transform: translateX(0) rotate(0) scale(1);
+    }
+}
+
+.wrapper.wrapper .signup .form-container.sign-in {
+    transform: rotate(0deg);
+    animation: rotatecard .1s ease-in-out forwards;
+    
+}
+
+@keyframes rotatecard {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0);
+        z-index: 1;
+    }
+}

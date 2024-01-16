@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login & Sign up</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bg">
+        <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+         <div class="bubble"></div>
+        </div>
+        <div class="container2 sign-up active">
+            <h1>Sign-Up Form</h1>
+            <div class="details">
+            <h2>Email</h2>
+            <input id="email" class="email" type="email" placeholder="Enter Email" required>
+            <h2>Password</h2>
+            <input id="password" class="password" type="password" placeholder="Enter Password" required>
+            <h2>Confirm Password</h2>
+            <input id="password2" class="password" type="password" placeholder="Re-Enter Password" required>
+            <button onclick="sign()" type="submit" name="sign" value="Sign Up" id="Sign-Up">Sign Up</button>
+           <div class="or">
+           -------<h4>Or SignUp With</h4>-------
+          </div>
+          <div class="icons">
+            <img src="images/icons8-facebook-48.png"/>
+            <img src="images/icons8-google-48.png"/>
+            <img src="images/icons8-linkedin-48.png"/>
+           </div>
+                <div class="link">
+                    <p>You already have an account?<a href="#" class="signin-link">Login</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container sign-in">
+            <h1>Login Form</h1>
+            <div class="details">
+            <h2>Email</h2>
+            <input id="email" class="email" type="email" placeholder="Enter Email" required>
+            <h2>Password</h2>
+            <input id="password" class="password" type="password" placeholder="Enter Password" required>
+            <div class="remember"><input type="checkbox"></input><h5>Remember me</h5> <h5><a href="#" >Forget Password?</a></h5></div>
+            <button onclick="login()" type="submit" name="login" value="Login" id="login">Login</button>
+            <div class="or">
+            -------<h4>Or Login With</h4>-------
+           </div>
+           <div class="icons">
+             <img src="images/icons8-facebook-48.png"/>
+             <img src="images/icons8-google-48.png"/>
+             <img src="images/icons8-linkedin-48.png"/>
+            </div>
+                <div class="link">
+                    <p>Don't have an account?<a href="#" class="signup-link"> sign up</a></p>
+                </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
